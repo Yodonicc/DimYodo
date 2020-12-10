@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+#logo {
+  width: 3.5%;
+  height: 80%;
+  border-radius: 0.5em;
+  align-self: center;
+  margin: 1em;
+  margin-top: 25px;
+}
+
+#webnameflexbox {
+  width: 15%;
+  display: flex;
+  background: rgb(255, 255, 255);
+  height: 3em;
+  flex-wrap: wrap;
+}
+
+div#navbar {
+  display: flex;
+  background: rgb(255, 255, 255);
+  height: 3em;
+}
+
+#elementorb {
+  margin-top: 7px;
+  margin-bottom: -10em;
+}
+
+#elementorspan {
+  margin-top: 25px;
+  /* margin-bottom: 0.01em; */
+  font-weight: 100;
+  font-family: serif;
+}
