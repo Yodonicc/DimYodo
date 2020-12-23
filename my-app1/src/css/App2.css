@@ -37,7 +37,11 @@
   }
 }
 
-#logo {
+#flexboxmain {
+  display: flex;
+}
+
+.littleimage {
   width: 3.5%;
   height: 80%;
   border-radius: 0.5em;
@@ -46,12 +50,21 @@
   margin-top: 25px;
 }
 
+.littleimage.circlelogo {
+  clip-path: circle(18px);
+}
+
+#logo3 {
+  clip-path: circle(10px);
+}
+
 #webnameflexbox {
   width: 15%;
   display: flex;
   background: rgb(255, 255, 255);
   height: 3em;
   flex-wrap: wrap;
+  align-content: flex-start;
 }
 
 div#navbar {
@@ -63,6 +76,7 @@ div#navbar {
 #elementorb {
   margin-top: 7px;
   margin-bottom: -10em;
+  align-self: start;
 }
 
 #elementorspan {
@@ -70,4 +84,238 @@ div#navbar {
   /* margin-bottom: 0.01em; */
   font-weight: 100;
   font-family: serif;
+  align-self: start;
+  text-align: left;
+}
+
+.downoutlined {
+  align-self: center;
+  margin: 7px;
+  font-size: 12px;
+}
+
+#seconddownoutlined {
+  align-self: center;
+  align-content: flex-end;
+}
+
+#firstSearchOutlined {
+  align-self: center;
+  margin: 7px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+#searchinput {
+  border-style: none;
+  margin: 12px;
+  width: 20em;
+}
+
+#bell {
+  font-size: 20px;
+}
+
+/* leftbar */
+#leftbar {
+  display: flex;
+  order: -1;      
+  flex-basis: 200px; 
+  flex-direction: column;
+  margin: 20px;
+  background: rgb(255, 255, 255);
+  width: 25%;
+  border-radius: 1em;
+}
+
+.leftbaricon {
+  align-self: flex-start;
+  align-content: flex-start;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.leftbartext {
+  margin-top: 25px;
+  margin-left: 15px;
+  /* margin-bottom: 0.01em; */
+  font-weight: 100;
+  font-family: serif;
+  align-self: start;
+  text-align: left;
+}
+
+#leftbarselected {
+  width: 90%;
+  border-style: solid;
+  border-color: white;
+  border-right-color: #2c46b1;
+  color: #4b48a7;
+  align-content: flex-start;
+  align-self: flex-end;
+}
+
+#intergrations {
+  margin-left: 0px;
+  margin-top: 3em;
+}
+
+#settings {
+  margin-left: 15px;
+  margin-top: 3em;
+}
+
+#logout {
+  margin-left: 15px;
+}
+
+/* rightbar */
+#rightbar {
+  display: flex;
+  flex-basis: 300px;
+  flex-direction: column;
+  margin: 20px;
+  background: rgb(255, 255, 255);
+  width: 25%;
+  border-radius: 1em;
+}
+
+#content {
+  flex-grow:1;
+}
+
+.rightflexbox {
+  display: flex;
+  margin: 15px;
+}
+
+#rightflexbox1-1 {
+  border-style: dashed;
+  border-radius: 100%;
+  border-width: 0.1em ;
+  border-color: #4764f2;
+  color: #d8e4ff;
+  /* order: -1; */
+}
+
+#rightflexbox1-2 {
+  flex-grow: 1;
+  font-weight: 700;
+}
+
+#rightflexbox1-3 {
+  font-size: 20px;
+}
+
+#rightflexbox2 {
+  background-color: #193ec2;
+  color: white;
+  font-weight: 400;
+  flex-direction: column;
+  border-radius: 0.5em;
+}
+
+#rightflexbox2-1 {
+  display: flex;
+  flex-direction: row;
+
+  /* order: -1; */
+}
+
+.content2-1 {
+  margin: 15px;
+  align-self: center;
+  text-align: center;
+}
+
+#rightflexbox2-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.text2-2 {
+  margin: 12px;
+}
+
+#rightflexbox2-3 {
+  display: flex;
+  flex-direction: row;
+}
+
+#PlusCircleFilled2-3 {
+  align-self: center;
+  margin: 12px;
+}
+
+#text2-3 {
+  flex-grow: 1;
+  text-align: start;
+  margin: 12px;
+}
+
+#rightflexbox3 {
+  background-color: #f4f6fb;
+  border-radius: 0.7em;
+}
+
+#text3-1 {
+  margin: 8px;
+  background-color: #ffffff;
+  color: #2a439c;
+  flex-grow: 1;
+  border-radius: 0.5em;
+  height: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#text3-2 {
+  margin: 8px;
+  color: #a3aabb;
+  flex-grow: 1;
+  height: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+#rightflexbox4 {
+  flex-direction: column;
+}
+
+#rightflexbox4-1 {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: row;
+  width: 100%;
+}
+
+#content4-1-1 {
+  margin-left: 10px;
+  font-weight: 800;
+  flex-grow: 1;
+  text-align: start;
+}
+
+#content4-1-2 {
+  font-weight: 300;
+}
+
+#rightflexbox4-2 {
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: row;
+  width: 100%;
+}
+
+.content4-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightflexbox4-2-left {
+  font-size: 20px;
+}
+
+.rightflexbox4-2-right {
+  font-size: 12px;
 }
